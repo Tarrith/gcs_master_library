@@ -10,7 +10,7 @@
 			"name": "Aslan",
 			"reference": "TA2:7",
 			"calc": {
-				"points": 62
+				"points": 65
 			},
 			"open": true,
 			"children": [
@@ -178,7 +178,7 @@
 					"id": "7995821b-26ae-4d91-8641-a081d619303d",
 					"name": "Racial Advantages",
 					"calc": {
-						"points": 55
+						"points": 58
 					},
 					"open": true,
 					"children": [
@@ -790,10 +790,25 @@
 						},
 						{
 							"type": "advantage",
-							"id": "ec08a699-d78e-4a6c-bc7c-b8704da50d73",
-							"name": "Sharp Claws",
+							"id": "b8ad3f0e-4fb7-4c35-a020-18d24db6cb9c",
+							"name": "Temperature Tolerance (cold)",
 							"physical": true,
-							"base_points": 5,
+							"levels": "1",
+							"points_per_level": 1,
+							"reference": "B93",
+							"calc": {
+								"points": 1
+							},
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"id": "616efb2b-6319-4fbf-bcbf-390b79f63afb",
+							"name": "Talons",
+							"physical": true,
+							"base_points": 8,
 							"weapons": [
 								{
 									"type": "melee_weapon",
@@ -833,55 +848,42 @@
 								{
 									"type": "melee_weapon",
 									"damage": {
-										"type": "cut",
-										"st": "thr"
+										"type": "imp",
+										"st": "thr",
+										"base": "-1"
 									},
-									"usage": "Kick",
-									"reach": "C,1",
-									"parry": "No",
+									"usage": "Stab",
+									"reach": "C",
+									"parry": "0",
 									"block": "No",
 									"calc": {
 										"level": 0,
-										"parry": "No",
+										"parry": "0",
 										"block": "No",
-										"damage": "thr cut"
+										"damage": "thr-1 imp"
 									},
 									"defaults": [
 										{
-											"type": "dx",
-											"modifier": -2
+											"type": "dx"
 										},
 										{
 											"type": "skill",
-											"name": "Karate",
-											"modifier": -2
+											"name": "Brawling"
 										},
 										{
 											"type": "skill",
-											"name": "Brawling",
-											"modifier": -2
+											"name": "Boxing"
+										},
+										{
+											"type": "skill",
+											"name": "Karate"
 										}
 									]
 								}
 							],
-							"reference": "B42",
+							"reference": "B43",
 							"calc": {
-								"points": 5
-							},
-							"categories": [
-								"Advantage"
-							]
-						},
-						{
-							"type": "advantage",
-							"id": "b8ad3f0e-4fb7-4c35-a020-18d24db6cb9c",
-							"name": "Temperature Tolerance (cold)",
-							"physical": true,
-							"levels": "1",
-							"points_per_level": 1,
-							"reference": "B93",
-							"calc": {
-								"points": 1
+								"points": 8
 							},
 							"categories": [
 								"Advantage"
